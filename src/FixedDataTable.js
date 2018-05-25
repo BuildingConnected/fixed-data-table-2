@@ -29,7 +29,7 @@ import FixedDataTableEventHelper from 'FixedDataTableEventHelper';
 
 import cx from 'cx';
 import debounceCore from 'debounceCore';
-import emptyFunction from 'emptyFunction';
+import emptyFunction from 'emptyFunction'
 import invariant from 'invariant';
 import joinClasses from 'joinClasses';
 import shallowEqual from 'shallowEqual';
@@ -1105,6 +1105,14 @@ var FixedDataTable = createReactClass({
       );
       children.push(child);
     });
+
+    if (oldState && (
+      (props.width !== undefined && props.width !== oldState.width) ||
+      (props.height !== undefined && props.height !== oldState.height) ||
+      (props.maxWidth !== undefined && props.maxWidth !== oldState.maxWidth) ||
+      (props.maxHeight !== undefined && props.maxHeight !== oldState.maxHeight))) {
+      oldState = null
+    }
 
     var scrollState;
     var firstRowIndex = (oldState && oldState.firstRowIndex) || 0;
