@@ -1,6 +1,8 @@
 Fixed Data Table 2 for React ![Travic CI status](https://api.travis-ci.org/schrodinger/fixed-data-table-2.svg?branch=master) [![npm version](https://badge.fury.io/js/fixed-data-table-2.svg)](https://www.npmjs.com/package/fixed-data-table-2)
 ====================================
 
+### TODO Fix This: https://github.com/schrodinger/fixed-data-table-2/issues/288
+
 #### Fixed-Data-Table-2 is a continuation of [facebook/fixed-data-table](https://github.com/facebook/fixed-data-table).  The original repo is no longer maintained and has many pull requests awaiting response.
 
 
